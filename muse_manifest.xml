@@ -1,0 +1,52 @@
+<manifest alg="2" build="1176" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" resolutions="1x" timestamp="1442855224382">
+  <folder name="css">
+    <file name="site_global.css" crc="422415861"/>
+    <file name="index.css" crc="352174963" ref="index"/>
+  </folder>
+  <folder name="fonts">
+    <file name="roboto-light-webfont.woff" crc="144605934"/>
+    <file name="roboto-light-webfont.eot" crc="4004064838"/>
+    <file name="roboto-light-webfont.svg" crc="3915206686"/>
+    <file name="roboto-thin-webfont.woff" crc="3887093719"/>
+    <file name="roboto-thin-webfont.eot" crc="3786320176"/>
+    <file name="roboto-thin-webfont.svg" crc="4016320384"/>
+    <file name="robotoslab-bold-webfont.woff" crc="286322032"/>
+    <file name="robotoslab-bold-webfont.eot" crc="3930624435"/>
+    <file name="robotoslab-bold-webfont.svg" crc="459799635"/>
+    <file name="roboto-medium-webfont.woff" crc="4273186689"/>
+    <file name="roboto-medium-webfont.eot" crc="4202433491"/>
+    <file name="roboto-medium-webfont.svg" crc="4209669829"/>
+    <file name="roboto-regular-webfont.woff" crc="4255380956"/>
+    <file name="roboto-regular-webfont.eot" crc="3884974636"/>
+    <file name="roboto-regular-webfont.svg" crc="3817040810"/>
+    <file name="robotoslab-light-webfont.woff" crc="4225613592"/>
+    <file name="robotoslab-light-webfont.eot" crc="4466153"/>
+    <file name="robotoslab-light-webfont.svg" crc="19716971"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="221936890" ref="index"/>
+    <file name="museutils.js" crc="3793461109" ref="index"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="172766474" ref="index"/>
+    <file name="jquery.watch.js" crc="3766403489" ref="index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3843766759" ref="index"/>
+    <file name="webpro.js" crc="4263367560" ref="index"/>
+    <file name="musewpslideshow.js" crc="126372691" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="3946374898" ref="index"/>
+    <file name="touchswipe.js" crc="3796284560" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="blurr retro header medium.png" crc="4136633014" ref="index"/>
+    <file name="11694852_1046729442027110_6351314127784957507_n.jpg" crc="526515445" ref="index"/>
+    <file name="11998974_1091443087555745_6263003696033621295_n.jpg" crc="4354155" ref="index"/>
+    <file name="12002999_1091443034222417_5945593355310018563_n.jpg" crc="429673628" ref="index"/>
+    <file name="12003023_1086899604676760_8171687757063356278_n.jpg" crc="3976144791" ref="index"/>
+    <file name="12011269_1091443124222408_9100682796217154426_n.jpg" crc="3967368003" ref="index"/>
+    <file name="11996918_1086899638010090_5028269678507522062_n.jpg" crc="335201939" ref="index"/>
+    <file name="12003266_1089616697738384_5778111582932943363_n.jpg" crc="167178683" ref="index"/>
+    <file name="12009769_1086899451343442_3871587623470237862_n.jpg" crc="4019379759" ref="index"/>
+    <file name="10624976_1089616687738385_8595170768701577820_n.jpg" crc="3785422235" ref="index"/>
+    <file name="tick.png" crc="280347302" ref="index"/>
+  </folder>
+  <file name="index.html" crc="4092573739" mt="1442855139591" redirect="true"/>
+</manifest>

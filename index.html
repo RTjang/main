@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+ <head>
+
+  <script type="text/javascript">
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.scrolleffects.js", "jquery.watch.js", "jquery.musepolyfill.bgsize.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2014.3.0.295"/>
+  <title>Blurr Photography</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?422415861"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?352174963" id="pagesheet"/>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+</script>
+    <!--custom head HTML-->
+  <meta name="theme-color" content="#EDCF37">
+<style>
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+div.column2 {
+position: relative;
+    top: -295px;
+    left: 361px;
+}
+
+
+body 				 
+.container 		{ 
+  font-family:'__Roboto_5';
+  width:400px; 
+  margin:30px 0px; 
+  display:block; 
+  padding:10px 50px 0px;
+}
+h2 		 { 
+  text-align:center; 
+  margin-bottom:50px; 
+}
+h2 small { 
+  font-weight:normal; 
+  color:#888; 
+  display:block; 
+}
+.footer 	{ text-align:center; }
+.footer a  { color:#53B2C8; }
+
+/* form starting stylings ------------------------------- */
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input[type=text] 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  background:rgba(0, 0, 0, 0.0);
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+input[type=textb]				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  background:rgba(0, 0, 0, 0.0);
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+
+input[type=submit]				{
+  font-size:20px;
+  line-height: 58px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  cursor:pointer;
+  font-family: '__Roboto_5';
+  font-weight: 400;
+  vertical-align: text-middle;
+  text-align: center;
+  padding:0px 0px 0px 0px;
+  display:block;
+  background:rgba(0, 0, 0, 0.0);
+}
+
+
+.submitbutton 			{
+position: relative;
+    top: -795px;
+    left: 361px;	
+z-index: 146;
+	width: 60px;
+	min-height: 60px;
+	-pie-box-shadow: 0px 2px 8px #CCCCCC;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+	border-radius: 100px;
+	line-height: 58px;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 41px;
+	font-family: '__Roboto_5';
+	font-weight: 900;
+	position: relative;
+	margin-right: -10000px;
+	background: #679C91 url("itsabook.tk/assets/tick.png") no-repeat left top;
+}
+
+
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+
+.groupb 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+input[type="textb"] 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:550px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+labelb 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.barb 	{ position:relative; display:block; width:550px; }
+.barb:before, .barb:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.barb:before {
+  left:50%;
+}
+.barb:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .barb:before, input:focus ~ .barb:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+</style>
+<script>
+$(window, document, undefined).ready(function() {
+
+  $('input').blur(function() {
+    var $this = $(this);
+    if ($this.val())
+      $this.addClass('used');
+    else
+      $this.removeClass('used');
+  });
+
+  var $ripples = $('.ripples');
+
+  $ripples.on('click.Ripples', function(e) {
+
+    var $this = $(this);
+    var $offset = $this.parent().offset();
+    var $circle = $this.find('.ripplesCircle');
+
+    var x = e.pageX - $offset.left;
+    var y = e.pageY - $offset.top;
+
+    $circle.css({
+      top: y + 'px',
+      left: x + 'px'
+    });
+
+    $this.addClass('is-active');
+
+  });
+
+  $ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
+  	$(this).removeClass('is-active');
+  });
+
+});
+</script>
+  <!--/*
+
+*/
+-->
+ </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="browser_width mse_pre_init" id="u95-bw">
+     <div class="shadow" id="u95"><!-- simple frame --></div>
+    </div>
+    <div class="clip_frame mse_pre_init" id="u87"><!-- image -->
+     <img class="block" id="u87_img" src="images/blurr%20retro%20header%20medium.png" alt="" width="500" height="574"/>
+    </div>
+    <div class="clearfix ose_pre_init mse_pre_init" id="u96-4"><!-- content -->
+     <p>adrian</p>
+    </div>
+    <div class="clearfix ose_pre_init mse_pre_init" id="u103-4"><!-- content -->
+     <p>zaknich</p>
+    </div>
+    <a class="anchor_item colelem" id="sample"></a>
+    <a class="nonblock nontext anim_swing clearfix ose_pre_init mse_pre_init" id="u262-4" href="index.html#about"><!-- content --><p>about</p></a>
+    <a class="nonblock nontext anim_swing clearfix ose_pre_init mse_pre_init" id="u264-4" href="index.html#sample"><!-- content --><p>sample</p></a>
+    <a class="nonblock nontext anim_swing clearfix ose_pre_init mse_pre_init" id="u263-4" href="index.html#book"><!-- content --><p>book</p></a>
+    <div class="clearfix colelem" id="pu112"><!-- group -->
+     <div class="shadow museBGSize ose_pre_init grpelem" id="u112"><!-- simple frame --></div>
+     <div class="shadow museBGSize ose_pre_init grpelem" id="u104"><!-- simple frame --></div>
+     <div class="shadow museBGSize ose_pre_init grpelem" id="u113"><!-- simple frame --></div>
+    </div>
+    <div class="clearfix colelem" id="pu115"><!-- group -->
+     <div class="shadow museBGSize ose_pre_init grpelem" id="u115"><!-- simple frame --></div>
+     <div class="shadow museBGSize ose_pre_init grpelem" id="u114"><!-- simple frame --></div>
+     <div class="shadow museBGSize ose_pre_init grpelem" id="u116"><!-- simple frame --></div>
+    </div>
+    <div class="clearfix colelem" id="ppu118"><!-- group -->
+     <div class="grpelem" id="pu118"><!-- inclusion -->
+      <div class="shadow museBGSize ose_pre_init" id="u118"><!-- simple frame --></div>
+      <div class="clearfix" id="pabout"><!-- group -->
+       <a class="anchor_item grpelem" id="about"></a>
+      </div>
+     </div>
+     <div class="shadow museBGSize ose_pre_init grpelem" id="u117"><!-- simple frame --></div>
+     <div class="shadow museBGSize ose_pre_init grpelem" id="u119"><!-- simple frame --></div>
+    </div>
+    <div class="clearfix colelem" id="pu246"><!-- group -->
+     <div class="shadow ose_pre_init grpelem" id="u246"><!-- simple frame --></div>
+     <div class="ose_pre_init grpelem" id="u253"><!-- simple frame --></div>
+     <div class="clearfix ose_pre_init grpelem" id="u248-27"><!-- content -->
+      <p id="u248-2">Event Photography in Sydney, New South Wales.</p>
+      <p id="u248-4">Can't remember last night? Was everything a BLURR? Not to worry! Here at BLURR Photography, we'll personally piece the night back together for you, one photo at a time!</p>
+      <p id="u248-5">&nbsp;</p>
+      <p id="u248-7">I am an Event Photographer in Sydney, NSW.</p>
+      <p id="u248-11">Add me and PM me: <a class="nonblock" href="http://www.facebook.com/adrian.zaknich">https://www.facebook.com/adrian.zaknich</a></p>
+      <p id="u248-13">.</p>
+      <p id="u248-15">.</p>
+      <p id="u248-17">The rates for booking BLURR Photography to cover your events costs:</p>
+      <p id="u248-19">$40/Hour + $70 for editing.</p>
+      <p id="u248-21">.</p>
+      <p id="u248-23">Events that are over 30 minutes driving from Rhodes station will cost an</p>
+      <p id="u248-25">additional $30 for travel costs.</p>
+     </div>
+     <a class="anchor_item grpelem" id="book"></a>
+    </div>
+    <div class="clearfix colelem" id="pu317-4"><!-- group -->
+     <div class="clearfix grpelem" id="u317-4"><!-- content -->
+      <p>testimonies</p>
+     </div>
+     <div class="shadow ose_pre_init grpelem" id="u183"><!-- simple frame --></div>
+     <div class="clearfix ose_pre_init grpelem" id="u237-4" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=1,M21=-1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="137" data-mu-ie-matrix-dy="-137"><!-- content -->
+      <p>book</p>
+     </div>
+     <div class="ose_pre_init grpelem" id="u200"><!-- custom html -->
+      <div class="container">
+
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='http://google.com';}"></iframe>
+<form action="https://docs.google.com/forms/d/1dlI5luvA6QAgkuDIHdC0POw1Gkz8nEINs24eY5XFxJM/formResponse" method="post"
+target="hidden_iframe" onsubmit="submitted=true;" id="myform">
+
+    <div class="group">      
+      <input type="text" name="entry.1530407497" value="" class="ss-q-short" id="entry_1530407497" dir="auto" aria-label="Name  " aria-required="true" required="" title="">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Name</label>
+    </div>
+
+    <div class="group">      
+      <input type="text" name="entry.1002403084" value="" class="ss-q-short" id="entry_1002403084" dir="auto" aria-label="Email  " aria-required="true" required="" title="">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Email</label>
+    </div>
+    
+ <div class="group">      
+      <input type="text" name="entry.80301458" value="" class="ss-q-short" id="entry_80301458" dir="auto" aria-label="Phone  " aria-required="true" required="" title="">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Phone</label>
+    </div>
+
+
+
+<div class="column2">
+ <div class="groupb">      
+      <input type="textb" name="entry.657905285" value="" class="ss-q-short" id="entry_657905285" dir="auto" aria-label="Event Name  " aria-required="true" required="" title="">
+      <span class="highlight"></span>
+      <span class="barb"></span>
+      <label>Event Name</label>
+    </div>
+<br>
+
+    <div class="groupb">      
+      <input type="textb" name="entry.768116126" value="" class="ss-q-short" id="entry_768116126" dir="auto" aria-label="Type of Event  " aria-required="true" required="" title="">
+      <span class="highlight"></span>
+      <span class="barb"></span>
+      <label>Type of Event</label>
+    </div>
+<br>
+
+    <div class="groupb">      
+      <input type="textb" name="entry.1857330642" value="" class="ss-q-short" id="entry_1857330642" dir="auto" aria-label="Date of Event  " aria-required="true" required="" title="">
+      <span class="highlight"></span>
+      <span class="barb"></span>
+      <label>Date of Event</label>
+    </div>
+<br>
+
+    <div class="groupb">      
+      <input type="textb" name="entry.1875353321" value="" class="ss-q-short" id="entry_1875353321" dir="auto" aria-label="Time of Event  " aria-required="true" required="" title="">
+      <span class="highlight"></span>
+      <span class="barb"></span>
+      <label>Time of Event</label>
+    </div>
+<br>
+
+    <div class="groupb">      
+      <input type="textb" name="entry.230619680" value="" class="ss-q-short" id="entry_230619680" dir="auto" aria-label="Location  " aria-required="true" required="" title="">
+      <span class="highlight"></span>
+      <span class="barb"></span>
+      <label>Location</label>
+    </div>
+ <br>
+  <div class="groupb">      
+      <input type="textb" name="entry.141978599" value="" class="ss-q-short" id="entry_141978599" dir="auto" aria-label="Additional Requests  " aria-required="true" required="" title="">
+      <span class="highlight"></span>
+      <span class="barb"></span>
+      <label>Additional Requests</label>
+    </div>
+</div>
+
+
+<input type="submit" name="submit" value="i" id="ss-submit" class="jfk-button jfk-button-action " style="display:none">
+  </form>
+</div>
+</div>
+    </div>
+    <div class="clearfix colelem" id="pu238"><!-- column -->
+     <div class="position_content" id="pu238_position_content">
+      <div class="ose_pre_init mse_pre_init" id="u238"><!-- simple frame --></div>
+      <div class="PamphletWidget clearfix mse_pre_init" id="pamphletu186"><!-- none box -->
+       <div class="ThumbGroup clearfix grpelem" id="u195"><!-- none box -->
+        <div class="popup_anchor">
+         <div class="Thumb popup_element clearfix" id="u196"><!-- group -->
+          <div class="shadow rounded-corners clearfix grpelem" id="u197-3"><!-- content -->
+           <p>&nbsp;</p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="u187popup">
+        <div class="ContainerGroup clearfix" id="u187"><!-- stack box -->
+         <div class="Container invi rounded-corners clearfix grpelem" id="u188"><!-- group -->
+          <div class="grpelem" id="u189"><!-- custom html -->
+           <center><input type="submit" form="myform" value="send" /></center>
+</div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="shadow mse_pre_init" id="u316"><!-- simple frame --></div>
+     </div>
+    </div>
+    <div class="clearfix mse_pre_init" id="u319-6"><!-- content -->
+     <p id="u319-2">&quot;Without Blurr Photography, I'm not sure how I would have ever found my calling in life. A true miracle worker, this Blurr guy&quot;</p>
+     <p id="u319-4">Pope Francis</p>
+    </div>
+    <div class="shadow mse_pre_init" id="u348"><!-- simple frame --></div>
+    <div class="shadow mse_pre_init" id="u349"><!-- simple frame --></div>
+    <div class="clearfix mse_pre_init" id="u351-6"><!-- content -->
+     <p id="u351-2">&quot;Blurr was amazing, without his photography, I'm not sure how I would have ever secured the support of the Liberal caucus&quot;</p>
+     <p id="u351-4">Malcolm Turnbull</p>
+    </div>
+    <div class="shadow mse_pre_init" id="u350"><!-- simple frame --></div>
+    <div class="shadow mse_pre_init" id="u352"><!-- simple frame --></div>
+    <div class="clearfix mse_pre_init" id="u354-6"><!-- content -->
+     <p id="u354-2">&quot;This man, no, this absolute legend, he has single handedly halved the wage gap with his photography&quot;</p>
+     <p id="u354-4">Women of Sydney</p>
+    </div>
+    <div class="shadow mse_pre_init" id="u353"><!-- simple frame --></div>
+    <div class="shadow mse_pre_init" id="u355"><!-- simple frame --></div>
+    <div class="clearfix mse_pre_init" id="u357-6"><!-- content -->
+     <p id="u357-2">&quot;Blurr's photography is the principle reason why Hitler is no longer a genocidal force in our world. What an absolute miracle worker, this Blurr guy&quot;</p>
+     <p id="u357-4">Israeli Knesset</p>
+    </div>
+    <div class="shadow mse_pre_init" id="u356"><!-- simple frame --></div>
+    <div class="shadow mse_pre_init" id="u364"><!-- simple frame --></div>
+    <div class="clearfix mse_pre_init" id="u366-6"><!-- content -->
+     <p id="u366-2">&quot;Blurr's photography is the principle reason why Hitler is no longer a genocidal force in our world. What an absolute miracle worker, this Blurr guy&quot;</p>
+     <p id="u366-4">Corey Worthington</p>
+    </div>
+    <div class="shadow mse_pre_init" id="u365"><!-- simple frame --></div>
+   </div>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script src="scripts/museutils.js?3793461109" type="text/javascript"></script>
+  <script src="scripts/jquery.scrolleffects.js?172766474" type="text/javascript"></script>
+  <script src="scripts/jquery.watch.js?3766403489" type="text/javascript"></script>
+  <script src="scripts/jquery.musepolyfill.bgsize.js?3843766759" type="text/javascript"></script>
+  <script src="scripts/webpro.js?4263367560" type="text/javascript"></script>
+  <script src="scripts/musewpslideshow.js?126372691" type="text/javascript"></script>
+  <script src="scripts/jquery.museoverlay.js?3946374898" type="text/javascript"></script>
+  <script src="scripts/touchswipe.js?3796284560" type="text/javascript"></script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   $(document).ready(function() { try {
+(function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
+typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();if(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",(d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+$('#u95-bw').registerPositionScrollEffect([{"in":[-Infinity,468],"speed":[null,1]},{"in":[468,Infinity],"speed":[null,0]}]);/* scroll effect */
+Muse.Utils.resizeHeight()/* resize height */
+$('#u87').registerPositionScrollEffect([{"in":[-Infinity,468],"speed":[0,1]},{"in":[468,Infinity],"speed":[0,0]}]);/* scroll effect */
+$('#u96-4').registerPositionScrollEffect([{"in":[-Infinity,468],"speed":[-0.5,1]},{"in":[468,Infinity],"speed":[0,0]}]);/* scroll effect */
+$('#u96-4').registerOpacityScrollEffect([{"in":[-Infinity,468],"opacity":0,"fade":70},{"in":[468,468],"opacity":100},{"in":[468,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u103-4').registerPositionScrollEffect([{"in":[-Infinity,468],"speed":[0.5,1]},{"in":[468,Infinity],"speed":[0,0]}]);/* scroll effect */
+$('#u103-4').registerOpacityScrollEffect([{"in":[-Infinity,468],"opacity":0,"fade":70},{"in":[468,468],"opacity":100},{"in":[468,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u262-4').registerPositionScrollEffect([{"in":[-Infinity,36],"speed":[0,1]},{"in":[36,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u262-4').registerOpacityScrollEffect([{"in":[-Infinity,36],"opacity":100,"fade":0},{"in":[36,36],"opacity":100},{"in":[36,Infinity],"opacity":0,"fade":80}]);/* scroll effect */
+$('#u264-4').registerPositionScrollEffect([{"in":[-Infinity,36],"speed":[0,1]},{"in":[36,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u264-4').registerOpacityScrollEffect([{"in":[-Infinity,36],"opacity":100,"fade":0},{"in":[36,36],"opacity":100},{"in":[36,Infinity],"opacity":0,"fade":80}]);/* scroll effect */
+$('#u263-4').registerPositionScrollEffect([{"in":[-Infinity,36],"speed":[0,1]},{"in":[36,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u263-4').registerOpacityScrollEffect([{"in":[-Infinity,36],"opacity":100,"fade":0},{"in":[36,36],"opacity":100},{"in":[36,Infinity],"opacity":0,"fade":80}]);/* scroll effect */
+$('#u112').registerOpacityScrollEffect([{"in":[-Infinity,246],"opacity":0,"fade":120},{"in":[246,246],"opacity":100},{"in":[246,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u104').registerOpacityScrollEffect([{"in":[-Infinity,326],"opacity":0,"fade":120},{"in":[326,326],"opacity":100},{"in":[326,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u113').registerOpacityScrollEffect([{"in":[-Infinity,406],"opacity":0,"fade":120},{"in":[406,406],"opacity":100},{"in":[406,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u115').registerOpacityScrollEffect([{"in":[-Infinity,486],"opacity":0,"fade":120},{"in":[486,486],"opacity":100},{"in":[486,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u114').registerOpacityScrollEffect([{"in":[-Infinity,566],"opacity":0,"fade":120},{"in":[566,566],"opacity":100},{"in":[566,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u116').registerOpacityScrollEffect([{"in":[-Infinity,646],"opacity":0,"fade":120},{"in":[646,646],"opacity":100},{"in":[646,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u118').registerOpacityScrollEffect([{"in":[-Infinity,726],"opacity":0,"fade":120},{"in":[726,726],"opacity":100},{"in":[726,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u117').registerOpacityScrollEffect([{"in":[-Infinity,806],"opacity":0,"fade":120},{"in":[806,806],"opacity":100},{"in":[806,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u119').registerOpacityScrollEffect([{"in":[-Infinity,886],"opacity":0,"fade":120},{"in":[886,886],"opacity":100},{"in":[886,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u246').registerOpacityScrollEffect([{"in":[-Infinity,1112],"opacity":0,"fade":120},{"in":[1112,1112],"opacity":100},{"in":[1112,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u253').registerOpacityScrollEffect([{"in":[-Infinity,1112],"opacity":0,"fade":400},{"in":[1112,1112],"opacity":100},{"in":[1112,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u248-27').registerOpacityScrollEffect([{"in":[-Infinity,1112],"opacity":0,"fade":120},{"in":[1112,1112],"opacity":100},{"in":[1112,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u183').registerOpacityScrollEffect([{"in":[-Infinity,1678],"opacity":0,"fade":120},{"in":[1678,1678],"opacity":100},{"in":[1678,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u237-4').registerOpacityScrollEffect([{"in":[-Infinity,1678],"opacity":0,"fade":115},{"in":[1678,1678],"opacity":100},{"in":[1678,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u200').registerOpacityScrollEffect([{"in":[-Infinity,1677.99],"opacity":0,"fade":120},{"in":[1677.99,1677.99],"opacity":100},{"in":[1677.99,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+$('#u238').registerPositionScrollEffect([{"in":[-Infinity,1678],"speed":[0,1]},{"in":[1678,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u238').registerOpacityScrollEffect([{"in":[-Infinity,1678],"opacity":0,"fade":120},{"in":[1678,1678],"opacity":100},{"in":[1678,Infinity],"opacity":100,"fade":50}]);/* scroll effect */
+Muse.Utils.initWidget('#pamphletu186', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'mouseover',deactivationEvent:'mouseout_both',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:300,hideAllContentsFirst:true,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false}); });/* #pamphletu186 */
+$('#pamphletu186').registerPositionScrollEffect([{"in":[-Infinity,1793.3],"speed":[0,0.5]},{"in":[1793.3,Infinity],"speed":[0,0]}]);/* scroll effect */
+$('#u316').registerPositionScrollEffect([{"in":[-Infinity,2786],"speed":[0,2]},{"in":[2786,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u319-6').registerPositionScrollEffect([{"in":[-Infinity,2786],"speed":[0,2]},{"in":[2786,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u348').registerPositionScrollEffect([{"in":[-Infinity,2786],"speed":[0,2]},{"in":[2786,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u349').registerPositionScrollEffect([{"in":[-Infinity,3087.05],"speed":[0,2]},{"in":[3087.05,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u351-6').registerPositionScrollEffect([{"in":[-Infinity,3087.05],"speed":[0,2]},{"in":[3087.05,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u350').registerPositionScrollEffect([{"in":[-Infinity,3087.05],"speed":[0,2]},{"in":[3087.05,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u352').registerPositionScrollEffect([{"in":[-Infinity,3388.05],"speed":[0,2]},{"in":[3388.05,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u354-6').registerPositionScrollEffect([{"in":[-Infinity,3388.05],"speed":[0,2]},{"in":[3388.05,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u353').registerPositionScrollEffect([{"in":[-Infinity,3388.05],"speed":[0,2]},{"in":[3388.05,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u355').registerPositionScrollEffect([{"in":[-Infinity,3689],"speed":[0,2]},{"in":[3689,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u357-6').registerPositionScrollEffect([{"in":[-Infinity,3689],"speed":[0,2]},{"in":[3689,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u356').registerPositionScrollEffect([{"in":[-Infinity,3689],"speed":[0,2]},{"in":[3689,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u364').registerPositionScrollEffect([{"in":[-Infinity,4033],"speed":[0,2]},{"in":[4033,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u366-6').registerPositionScrollEffect([{"in":[-Infinity,4033],"speed":[0,2]},{"in":[4033,Infinity],"speed":[0,1]}]);/* scroll effect */
+$('#u365').registerPositionScrollEffect([{"in":[-Infinity,4033],"speed":[0,2]},{"in":[4033,Infinity],"speed":[0,1]}]);/* scroll effect */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+} catch(e) { if (e && 'function' == typeof e.notify) e.notify(); else Muse.Assert.fail('Error calling selector function:' + e); }});
+</script>
+   </body>
+</html>
